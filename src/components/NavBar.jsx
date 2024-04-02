@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-black flex justify-around items-center h-24 w-full mx-auto px-4 text-white">
+    <div className="bg-black flex justify-around items-center h-24 w-full mx-auto px-4 text-white ">
       {/* Logo */}
       <div>
         <h1 className="w-full text-3xl font-bold text-[#00df9a]">
@@ -31,7 +31,7 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
         {navItems.map((item) => (
-          <Link to={item.link}>
+          <Link to={item.link} key={item.id}>
             <li
               key={item.id}
               className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
@@ -41,6 +41,11 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
+      <div>
+        <Link to="/connect" className="btn">
+          Get In Touch
+        </Link>
+      </div>
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className="block md:hidden">
@@ -62,7 +67,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
-          <Link to={item.link}>
+          <Link to={item.link} key={item.id}>
             <li
               key={item.id}
               className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"

@@ -4,7 +4,7 @@ import Header from "../components/Header.jsx";
 import WhyUs from "@/components/WhyUs.jsx";
 const Home = () => {
   return (
-    <div className="h-[100px]   ">
+    <div>
       <Slider />
       <Header />
       <WhyUs />

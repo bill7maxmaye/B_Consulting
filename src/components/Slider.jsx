@@ -19,8 +19,8 @@ const fadeImages = [
 
 const Slideshow = () => {
   return (
-    <div className="slide-container relative ">
-      <Fade autoplay={true} duration={3000}>
+    <div className="slide-container relative  ">
+      <Fade autoplay={true} duration={2000}>
         {fadeImages.map((fadeImage, index) => (
           <div key={index} className="slide-item relative">
             <img

@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
-      <div className="relative isolate px-10 pt-14 lg:px-8 mt-20">
+      <div className="relative isolate px-10 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"

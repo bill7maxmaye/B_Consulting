@@ -12,8 +12,8 @@ import { AiOutlineSolution } from "react-icons/ai";
 
 const WhyUs = () => {
   return (
-    <div>
-      <div className="flex flex-wrap -mx-4 mt-40">
+    <div className="overflow-hidden p-32">
+      <div className="flex flex-wrap -mx-4 ">
         <div className="w-full px-4">
           <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
             {/* <span className="block mb-2 text-lg font-semibold text-primary">
