@@ -16,9 +16,6 @@ const WhyUs = () => {
       <div className="flex flex-wrap -mx-4 ">
         <div className="w-full px-4">
           <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-            {/* <span className="block mb-2 text-lg font-semibold text-primary">
-                                Our Services
-                            </span> */}
             <h2 className="mb-4 title ">Why Us?</h2>
             <p className="mb-10 subdesc">9 Main Reasons to Choose Headstart</p>
           </div>
@@ -84,7 +81,7 @@ const WhyUs = () => {
             </p>
           </div>
         </div>
-        <div className="p-8 border-b sm:border-r">
+        <div className="p-8  sm:border-r">
           <div className="max-w-md text-center">
             <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16 shadow-md">
               <LiaUniversitySolid className="w-10 h-10 text-gray-700" />
@@ -100,7 +97,7 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="p-8 border-b">
+        <div className="p-8 ">
           <div className="max-w-md text-center">
             <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16 shadow-md">
               <LiaHandsHelpingSolid className="w-10 h-10 text-gray-700" />
@@ -112,51 +109,6 @@ const WhyUs = () => {
               We assist students in the entire application process, including
               filling out application forms, writing SOPs, essays, and letters
               of recommendation etc.
-            </p>
-          </div>
-        </div>
-
-        <div className="p-8 border-b sm:border-r lg:border-b-0">
-          <div className="max-w-md text-center">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16 shadow-md">
-              <MdOutlineAssignment className="w-10 h-10 text-gray-700" />
-            </div>
-            <h6 className="mb-2 font-semibold leading-5">Visa Assistance</h6>
-            <p className="mb-3 text-sm text-gray-700 leading-5">
-              We guide students through the visa process, including preparing
-              the required documents, scheduling visa workshops, and providing
-              guidance on visa interview preparation.
-            </p>
-          </div>
-        </div>
-
-        <div className="p-8 border-b lg:border-b-0 lg:border-r">
-          <div className="max-w-md text-center">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16 shadow-md">
-              <BiUserVoice className="w-10 h-10 text-gray-700" />
-            </div>
-            <h6 className="mb-2 font-semibold leading-5">
-              Pre-Departure Briefing
-            </h6>
-            <p className="mb-3 text-sm text-gray-700 leading-5">
-              We provide students with a comprehensive briefing on what to
-              expect once they reach their destination country, including
-              information on accommodation, travel, and orientation.
-            </p>
-          </div>
-        </div>
-
-        <div className="p-8 sm:border-r lg:border-r-0">
-          <div className="max-w-md text-center">
-            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16 shadow-md">
-              <SiSemanticscholar className="w-10 h-10 text-gray-700" />
-            </div>
-            <h6 className="mb-2 font-semibold leading-5">
-              Scholarship Assistance
-            </h6>
-            <p className="mb-3 text-sm text-gray-700 leading-5">
-              We provide information on available scholarships and assist
-              students in applying.
             </p>
           </div>
         </div>

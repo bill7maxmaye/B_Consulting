@@ -24,14 +24,10 @@ const Footer = () => {
             className="inline-flex items-center"
           >
             <img
-              className="h-16 w-auto rounded"
+              className="h-16 w-auto rounded-full"
               src="/images/appstore.png"
               alt="brandlogo"
             />
-
-            {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 ">
-                            Headstart
-                        </span> */}
           </Link>
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-700 leading-6">
