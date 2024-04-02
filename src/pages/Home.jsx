@@ -1,7 +1,15 @@
 import React from "react";
-
+import Slider from "../components/Slider.jsx";
+import Header from "../components/Header.jsx";
+import WhyUs from "@/components/WhyUs.jsx";
 const Home = () => {
-  return <div className="h-[800px] border border-sky-600 m-5 ">Home</div>;
+  return (
+    <div className="h-[100px]   ">
+      <Slider />
+      <Header />
+      <WhyUs />
+    </div>
+  );
 };
 
 export default Home;
