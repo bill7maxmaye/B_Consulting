@@ -1,16 +1,17 @@
+import ServiceDetails from "@/components/ServiceDetails";
 import React from "react";
 
 const About = () => {
   return (
-    <div className="flex justify-center h-screen bg-gray-100 w-full">
+    <div className="flex justify-center  bg-gray-100 w-full ">
       <div className="bg-white p-8 rounded-lg shadow-md w-full ">
         <div className="p-8 rounded-lg shadow-md w-full">
-          <h1 className="text-3xl font-bold mb-4">About Us</h1>
+          <h1 className="text-3xl font-bold mb-4 title">About Us</h1>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold mb-2 mt-8">Our Vision</h2>
-          <p className="text-gray-700">
+          <h2 className="text-xl font-semibold mb-2 mt-8 title">Our Vision</h2>
+          <p className="text-gray-700 justify-center items-center">
             Our vision at Abdu Consulting is to be the leading business and
             investment consulting firm, providing unparalleled expertise and
             solutions that drive global business growth. We believe in the
@@ -22,6 +23,7 @@ const About = () => {
             Let’s talk
           </p>
         </div>
+        <ServiceDetails imagePosition="left" imageUrl="/images/about1.webp" />
       </div>
     </div>
   );

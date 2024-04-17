@@ -2,6 +2,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import ContactUs from "./pages/ContactUs";
 import NavBar from "./components/NavBar";
 import About from "./pages/About";
 import OurServices from "./pages/OurServices";
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/services" element={<OurServices />} />
         <Route path="/marketing" element={<Marketing />}></Route>
         <Route path="/investment" element={<Investment />}></Route>

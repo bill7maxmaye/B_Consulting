@@ -14,7 +14,7 @@ const OurServices = () => {
 
   return (
     <div className=" w-full mx-auto bg-white rounded-xl  p-8 mb-4 ">
-      <p className="text-center text-3xl font-bold mb-8">Our Services</p>
+      <p className="text-center text-3xl font-bold mb-8 title">Our Services</p>
       {/* Grid layout for cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Map over the services array and render a card for each service */}

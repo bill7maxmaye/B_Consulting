@@ -38,7 +38,7 @@ const Slideshow = () => {
       <div className="px-10 mx-auto sm:px-20">
         <div className="relative mx-auto">
           <div className="sm:max-w-lg pt-44">
-            <h1 className="text-4xl text-center font-semibold tracking-tight text-gray-800 sm:text-5xl sm:text-left">
+            <h1 className="text-4xl text-center font-semibold tracking-tight  title sm:text-5xl sm:text-left">
               Welcome to <br />
               <span className="text-primary sm:text-6xl">Abdu Consulting</span>
             </h1>
