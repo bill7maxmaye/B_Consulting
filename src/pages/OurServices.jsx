@@ -14,7 +14,9 @@ const OurServices = () => {
 
   return (
     <div className=" w-full mx-auto bg-white rounded-xl  p-8 mb-4 ">
-      <p className="text-center text-3xl font-bold mb-8 title">Our Services</p>
+      <p className="text-center text-3xl font-bold mb-8 title p-10">
+        Our Services
+      </p>
       {/* Grid layout for cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Map over the services array and render a card for each service */}
@@ -22,9 +24,13 @@ const OurServices = () => {
           <Link to={service.route} key={index}>
             <Card
               key={index}
-              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700   "
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition-transform duration-300 transform hover:scale-105   "
             >
-              <img class="rounded-t-lg" src="/images/logo.jpg" alt="" />
+              <img
+                className="rounded-t-lg h-[250px]"
+                src={service.image}
+                alt=""
+              />
 
               <CardHeader className="text-center py-6 ">
                 <CardTitle className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

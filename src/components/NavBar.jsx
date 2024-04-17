@@ -30,8 +30,8 @@ const Navbar = () => {
             className="inline-flex items-center"
           >
             <img
-              className="h-16 w-16 rounded-full"
-              src="/images/logo.jpg"
+              className="h-16 w-16 rounded-full object-cover"
+              src="/images/logo3.jpg"
               alt="brandlogo"
             />
           </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="hidden md:flex flex-wrap ">
-        <Link to="/connect" className="btn ">
+        <Link to="/contact" className="btn ">
           Get In Touch
         </Link>
       </div>

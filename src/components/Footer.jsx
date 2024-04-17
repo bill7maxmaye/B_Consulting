@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <img
               className="h-16 w-16 rounded-full"
-              src="/images/logo.jpg"
+              src="/images/logo2.jpg"
               alt="brandlogo"
             />
           </Link>
