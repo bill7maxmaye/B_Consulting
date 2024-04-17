@@ -21,28 +21,44 @@ const Navbar = () => {
 
   return (
     <div className="bg-black flex justify-around items-center h-24 w-full mx-auto px-4 text-white ">
-      {/* Logo */}
-      <div>
-        <h1 className="w-full text-3xl font-bold text-[#00df9a]">
-          Abd Consulting
-        </h1>
+      <div className="flex flex-row justify-between items-center gap-x-2">
+        <div>
+          <Link
+            to="/"
+            aria-label="Go home"
+            title="Company"
+            className="inline-flex items-center"
+          >
+            <img
+              className="h-16 w-16 rounded-full"
+              src="/images/logo.jpg"
+              alt="brandlogo"
+            />
+          </Link>
+        </div>
+
+        <div>
+          <h2 className="w-full text-3xl  font-bold text-[#00df9a]">
+            Abdu Consulting
+          </h2>
+        </div>
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex ">
         {navItems.map((item) => (
           <Link to={item.link} key={item.id}>
             <li
               key={item.id}
-              className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+              className="p-4 hover:bg-[#00df9a] rounded-xl  cursor-pointer duration-300 hover:text-black "
             >
               {item.text}
             </li>
           </Link>
         ))}
       </ul>
-      <div>
-        <Link to="/connect" className="btn">
+      <div className="hidden md:flex flex-wrap ">
+        <Link to="/connect" className="btn ">
           Get In Touch
         </Link>
       </div>

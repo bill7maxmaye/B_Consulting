@@ -24,8 +24,8 @@ const Footer = () => {
             className="inline-flex items-center"
           >
             <img
-              className="h-16 w-auto rounded-full"
-              src="/images/appstore.png"
+              className="h-16 w-16 rounded-full"
+              src="/images/logo.jpg"
               alt="brandlogo"
             />
           </Link>
