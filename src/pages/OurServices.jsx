@@ -7,12 +7,13 @@ import {
 import React from "react";
 import services from "@/data/serviceData";
 import { Link } from "react-router-dom";
+import ServiceDetails from "@/components/ServiceDetails";
 
 const OurServices = () => {
   // Define an array of objects containing data for each card
 
   return (
-    <div className=" w-full mx-auto bg-white rounded-xl shadow-md p-8 mb-4">
+    <div className=" w-full mx-auto bg-white rounded-xl  p-8 mb-4 ">
       <p className="text-center text-3xl font-bold mb-8">Our Services</p>
       {/* Grid layout for cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -21,7 +22,7 @@ const OurServices = () => {
           <Link to={service.route} key={index}>
             <Card
               key={index}
-              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 -z-1"
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700   "
             >
               <img class="rounded-t-lg" src="/images/logo.jpg" alt="" />
 
@@ -38,32 +39,12 @@ const OurServices = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row w-full mx-auto mt-8 bg-white rounded-lg shadow-md overflow-hidden">
-        {/* Image */}
-        <div className="md:w-1/2">
-          <img
-            src="/images/service2.webp"
-            alt="Project Image"
-            className="w-full h-auto md:h-full object-cover"
-          />
-        </div>
+      {/* first part */}
+      <ServiceDetails imagePosition="left" imageUrl="/images/service1.webp" />
 
-        {/* Description */}
-        <div className="md:w-1/2 p-8">
-          <h1 className="text-3xl font-bold mb-4">
-            Maximizing Returns: Investment Strategy for a Growing Tech Company
-          </h1>
-          <p className="text-lg mb-4">
-            Discover how Abdu Consulting helped a fast-growing tech company
-            maximize their returns and enter new markets, leveraging their
-            expertise in investment strategy and market research.
-          </p>
-          <ul className="list-disc ml-6">
-            <li>Investment strategy to maximize returns</li>
-            <li>Expansion into new markets</li>
-          </ul>
-        </div>
-      </div>
+      {/* second part */}
+
+      <ServiceDetails imagePosition="right" imageUrl="/images/service2.webp" />
     </div>
   );
 };
